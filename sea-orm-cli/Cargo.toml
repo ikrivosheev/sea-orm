@@ -28,7 +28,7 @@ name = "sea"
 path = "src/bin/sea.rs"
 
 [dependencies]
-clap = { version = "^2.33.3" }
+clap = { version = "^3.1", features = ["derive"] }
 dotenv = { version = "^0.15" }
 async-std = { version = "^1.9", features = [ "attributes", "tokio1" ] }
 sea-orm-codegen = { version = "^0.7.0", path = "../sea-orm-codegen" }
