@@ -120,8 +120,3 @@ runtime-tokio-rustls = [
     "runtime-tokio",
 ]
 tests-cfg = ["serde/derive"]
-
-
-[patch.crates-io]
-sea-query = { git = "https://github.com/SeaQL/sea-query", branch = "master" }
-sea-query-binder = { git = "https://github.com/SeaQL/sea-query", branch = "master" }
