@@ -1241,8 +1241,8 @@ mod tests {
                 parse_from_file(ENTITY_FILES[i].as_bytes())?.to_string(),
                 EntityWriter::gen_expanded_code_blocks(
                     entity,
-                    &crate::WithSerde::None,
-                    &crate::DateTimeCrate::Chrono,
+                    &WithSerde::None,
+                    &DateTimeCrate::Chrono,
                     &None
                 )
                 .into_iter()
@@ -1257,8 +1257,8 @@ mod tests {
                 parse_from_file(ENTITY_FILES[i].as_bytes())?.to_string(),
                 EntityWriter::gen_expanded_code_blocks(
                     entity,
-                    &crate::WithSerde::None,
-                    &crate::DateTimeCrate::Chrono,
+                    &WithSerde::None,
+                    &DateTimeCrate::Chrono,
                     &Some("public".to_owned())
                 )
                 .into_iter()
@@ -1273,8 +1273,8 @@ mod tests {
                 parse_from_file(ENTITY_FILES_WITH_SCHEMA_NAME[i].as_bytes())?.to_string(),
                 EntityWriter::gen_expanded_code_blocks(
                     entity,
-                    &crate::WithSerde::None,
-                    &crate::DateTimeCrate::Chrono,
+                    &WithSerde::None,
+                    &DateTimeCrate::Chrono,
                     &Some("schema_name".to_owned())
                 )
                 .into_iter()
@@ -1325,8 +1325,8 @@ mod tests {
                 parse_from_file(ENTITY_FILES[i].as_bytes())?.to_string(),
                 EntityWriter::gen_compact_code_blocks(
                     entity,
-                    &crate::WithSerde::None,
-                    &crate::DateTimeCrate::Chrono,
+                    &WithSerde::None,
+                    &DateTimeCrate::Chrono,
                     &None
                 )
                 .into_iter()
@@ -1341,8 +1341,8 @@ mod tests {
                 parse_from_file(ENTITY_FILES[i].as_bytes())?.to_string(),
                 EntityWriter::gen_compact_code_blocks(
                     entity,
-                    &crate::WithSerde::None,
-                    &crate::DateTimeCrate::Chrono,
+                    &WithSerde::None,
+                    &DateTimeCrate::Chrono,
                     &Some("public".to_owned())
                 )
                 .into_iter()
@@ -1357,8 +1357,8 @@ mod tests {
                 parse_from_file(ENTITY_FILES_WITH_SCHEMA_NAME[i].as_bytes())?.to_string(),
                 EntityWriter::gen_compact_code_blocks(
                     entity,
-                    &crate::WithSerde::None,
-                    &crate::DateTimeCrate::Chrono,
+                    &WithSerde::None,
+                    &DateTimeCrate::Chrono,
                     &Some("schema_name".to_owned())
                 )
                 .into_iter()
